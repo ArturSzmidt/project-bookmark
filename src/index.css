@@ -1,0 +1,72 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+.button {
+  @apply shadow-md py-3 px-6 rounded-md transition duration-300;
+}
+
+.button-white {
+  @apply bg-prWhite;
+  border: 2px solid #f7f7f7;
+}
+.button-white:hover {
+  border: 2px solid #9194a1;
+}
+
+.button-purple {
+  @apply bg-prLightBlue text-white;
+  border: 2px solid #5368df;
+}
+.button-purple:hover {
+  border: 2px solid #5368df;
+}
+.button-red {
+  border: 2px solid #fa5757;
+}
+.button-red:hover {
+  border: 2px solid #fa5757;
+}
+.rounded-element {
+  @apply hidden md:block overflow-hidden bg-prLightBlue;
+  height: 20rem;
+  width: 40%;
+  top: 8rem;
+  right: 0px;
+  position: absolute;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+.rounded-element-invert {
+  @apply hidden lg:block overflow-hidden bg-prLightBlue;
+  height: 20rem;
+  width: 40%;
+  top: 8rem;
+  right: 0px;
+  bottom: -6rem;
+  left: -9rem;
+  position: absolute;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.logo-invert {
+  fill: white;
+}
+#svg-icons:hover {
+  @apply transition duration-300;
+  fill: #fa5757;
+}
+
+.arrow {
+  @apply transition duration-300;
+}
+
+.arrowRotate {
+  @apply transition duration-300;
+  stroke: #fa5757;
+  transform: rotate(180deg);
+  transform-origin: 50% 50%;
+}
