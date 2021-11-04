@@ -1,51 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import logo from '../img/logo-bookmark.svg';
-import hamburger from '../img/icon-hamburger.svg';
-
+import React, { useState } from 'react';
 import tab3 from '../img/illustration-features-tab-3.svg';
-const Nav = () => {
+const Modal = () => {
   const [showModal, setShowModal] = useState(false);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      console.log('This will run after 30 second!');
-      setShowModal(true);
-    }, 30000);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <div>
-      <div
-        className="mt-4 cursor-pointer "
-        onMouseEnter={() => setShowModal(true)}
+    <>
+      <button
+        className="bg-blue-200 text-black active:bg-blue-500 
+      font-bold px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+        type="button"
+        onClick={() => setShowModal(true)}
       >
-        <hr className="hr" />
-      </div>
-      <nav className=" container flex items-center   sm:mt-12">
-        <div className="py-1">
-          <img src={logo} alt="" />
-        </div>
-        <ul className="hidden sm:flex flex-1 justify-end items-center gap-12 text-prLightBlue uppercase text-xs">
-          <li className="cursor-pointer text-prDarkBlue hover:text-prLightRed">
-            Features
-          </li>
-          <li className="cursor-pointer text-prDarkBlue hover:text-prLightRed">
-            Pricing
-          </li>
-          <li className="cursor-pointer text-prDarkBlue hover:text-prLightRed">
-            Contact
-          </li>
-          <button
-            type="button"
-            className=" button-red bg-prLightRed text-white rounded-md px-7 py-3 uppercase hover:bg-white hover:text-prLightRed transition duration-300  "
-          >
-            Login
-          </button>
-        </ul>
-        <div className="flex sm:hidden flex-1 justify-end">
-          <img src={hamburger} alt="" className="text-2xl" />
-        </div>
-      </nav>
+        Sign Up
+      </button>
       {showModal ? (
         <>
           <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
@@ -92,8 +58,8 @@ const Nav = () => {
           </div>
         </>
       ) : null}
-    </div>
+    </>
   );
 };
 
-export default Nav;
+export default Modal;

@@ -7,6 +7,7 @@ import Download from './components/Download';
 import Faq from './components/FaqCopy';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Modal from './components/Modal';
 
 function App() {
   return (

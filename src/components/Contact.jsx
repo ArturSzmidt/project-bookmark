@@ -29,7 +29,7 @@ const Contact = () => {
               className="focus:outline-none flex-1 px-2 py-3 rounded-md text-black "
               placeholder="Enter your email address"
               {...register('singleErrorInput', {
-                required: 'This is required.',
+                required: "Whoops, make sure it's an email",
                 pattern:
                   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
               })}
@@ -46,7 +46,7 @@ const Contact = () => {
             errors={errors}
             name="singleErrorInput"
             render={({ message }) => (
-              <p className=" bg-prLightRed  px-2  rounded-md text-white">
+              <p className=" bg-prLightRed  px-2   rounded-md text-white italic">
                 {message}
                 {console.log(errors, message)}
               </p>

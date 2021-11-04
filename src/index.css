@@ -70,3 +70,26 @@
   transform: rotate(180deg);
   transform-origin: 50% 50%;
 }
+.hr {
+  color: white;
+  border: 1px solid white;
+}
+
+p.bg-prLightRed.px-2.rounded-md.text-white.italic {
+  width: 76.3%;
+}
+
+#root
+  > div
+  > div.py-20.mt-20.lg\:mt-60
+  > div.sm\:w-3.lg\:w-5\/12.mx-auto.px-2.pt-20
+  > ul
+  > li:nth-child(1)::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+
+  transform: translateY(24px);
+}

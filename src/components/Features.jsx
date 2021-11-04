@@ -7,14 +7,14 @@ const Features = () => {
     <div className="py-20 mt-20 lg:mt-60">
       <div className="sm:w-3 lg:w-5/12 mx-auto px-2">
         <h1 className="text-3xl text-center text-prDarkBlue ">Features</h1>
-        <p className="text-center text-prGray mt-4">
+        <p className="text-center text-prGray mt-8">
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
         </p>
       </div>
-      <div className="sm:w-3 lg:w-5/12 mx-auto px-2 pt-12">
-        <ul className="flex  justify-between items-center gap-6">
+      <div className="sm:w-3  lg:w-5/12 mx-auto px-2 pt-20 ">
+        <ul className="flex flex-col lg:flex-row   justify-between items-center gap-6 px-12">
           <li className="hover:text-prLightRed cursor-pointer">
             Simple Bookmarking
           </li>
@@ -26,7 +26,7 @@ const Features = () => {
         <hr className="mt-6" />
       </div>
       {/* feature */}
-      <div className="relative mt-20 lg:mt-24">
+      <div className="relative mt-20 lg:mt-24 ">
         <div className="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
           <div className="flex flex-1 justify-center z-10 mb-10 lg:-0">
             <img src={tab1} alt="" />
@@ -49,7 +49,7 @@ const Features = () => {
         </div>
         {/*  */}
       </div>
-      <div className="relative mt-20 lg:mt-52">
+      {/* <div className="relative mt-20 lg:mt-52">
         <div className="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
           <div className="flex flex-1 justify-center z-10 mb-10 lg:-0">
             <img src={tab2} alt="" />
@@ -69,9 +69,9 @@ const Features = () => {
           </div>
           <div className="rounded-element-invert"></div>
         </div>
-        {/*  */}
-      </div>
-      <div className="relative mt-20 lg:mt-24">
+        
+      </div> */}
+      {/* <div className="relative mt-20 lg:mt-24">
         <div className="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
           <div className="flex flex-1 justify-center z-10 mb-10 lg:-0">
             <img src={tab3} alt="" />
@@ -91,8 +91,8 @@ const Features = () => {
           </div>
           <div className="rounded-element-invert"></div>
         </div>
-        {/*  */}
-      </div>
+        
+      </div> */}
     </div>
   );
 };
